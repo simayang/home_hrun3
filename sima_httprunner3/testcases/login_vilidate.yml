@@ -1,0 +1,20 @@
+config:
+    name: 登录
+    variables:
+        user: test
+        pws: "123456"
+
+teststeps:
+-
+    name: 登录成功
+    request:
+        url: ${ENV(base_url)}/api/v1/login
+        method: POST
+        json:
+            username: $user
+            password: $pws
+    validate:
+    - eq: [status_code,200]
+    - eq: [headers.Content-Type,application/json]
+    - eq: [content.code,0,code错误]
+    - len_eq: [body.token,40]

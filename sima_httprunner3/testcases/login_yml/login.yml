@@ -1,0 +1,28 @@
+config:
+    name: 登录-成功
+    variables:
+        user: test
+        psw: "123456"
+    export:
+    - token
+
+#    output:
+#    - token
+
+    base_url: http://124.70.221.221:8201
+
+teststeps:
+-
+    name: 登录成功
+    request:
+        url: /api/v1/login
+        method: POST
+        json:
+            username: $user
+            password: $psw
+    extract:
+        - token: body.token
+    validate:
+        - eq: [status_code,200]
+        - eq: [content.code,0]
+        - eq: [body.msg, login success!]

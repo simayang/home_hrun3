@@ -1,0 +1,23 @@
+config:
+    name: login case
+    base_url: ${ENV(base_url)}
+    parameters: # variables 和 parameters 设置相同名称变量时，parameters 优先级大于variables
+        user: [test1,test2,test3,test4] # 第三种，笛卡尔积，每个账号运行一次下面对应的列，共运行16次
+        psw: ["123456","123456","123456","123456"]
+
+teststeps:
+-
+    name: step login
+    variables:
+            password: 123456
+    request:
+        url: /api/v1/login
+        method: POST
+        json:
+            username: $user
+            password: $password
+    validate:
+        - eq: [status_code, 200]
+        - eq: [content.code, 0]
+        - eq: [content.msg, login success!]
+        - len_eq: [content.token, 40]

@@ -1,0 +1,21 @@
+config:
+    name: 注册-成功
+    base_url: ${ENV(base_url)}
+    parameters:
+        user-psw-email:
+        - ["${user_register()}","123456",""]
+        - ["${user_register()}","123456","61961262@qq.com"]
+
+teststeps:
+-
+    name: 注册-成功
+    request:
+        url: /api/v1/register
+        method: POST
+        json:
+            username: $user
+            password: $psw
+            email: $email
+    validate:
+        - eq: [status_code,200]
+        - eq: [body.code,0]

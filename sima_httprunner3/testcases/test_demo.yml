@@ -1,0 +1,27 @@
+config:
+    name: get 请求
+    base_url: http://124.70.221.221:8201
+
+teststeps:
+-
+    name: demo 不带参数
+    request:
+        url: /api/test/demo
+        method: GET
+    validate:
+        - eq: [status_code,200]
+        - eq: [body.code,0]
+        - eq: [content.data.0.age, 20]
+
+-
+    name: demo get带参数
+    request:
+        method: GET
+        url: ${ENV(base_url)}/api/v1/goods
+        params:
+            page: 1
+            size: 2
+    validate:
+        - eq: [status_code,200]
+        - eq: [content.code,0]
+        - eq: [content.data.0.id,2]

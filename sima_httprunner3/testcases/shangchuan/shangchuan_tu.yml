@@ -1,0 +1,16 @@
+config:
+    name: 上传图片
+    base_url: ${ENV(base_url)}
+
+teststeps:
+-
+    name: 上传图片接口
+    request:
+        url: /api/v1/upfile/
+        method: POST
+        upload:
+            file: "data/test.png"
+            title: 司马
+    validate:
+        - eq: [status_code,200]
+        - eq: [body.code,0]

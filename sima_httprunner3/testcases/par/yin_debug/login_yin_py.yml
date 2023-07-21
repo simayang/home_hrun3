@@ -1,0 +1,24 @@
+config:
+    name: login case
+    base_url: ${ENV(base_url)}
+    parameters:
+        user-psw: ${get_user_psw2()}
+#        psw: ["123456"]
+
+
+teststeps:
+-
+    name: step login
+#    variables:
+#        psw: 123456
+    request:
+        url: /api/v1/login
+        method: POST
+        json:
+            username: $user
+            password: $psw
+    validate:
+        - eq: [status_code, 200]
+        - eq: [content.code, 0]
+        - eq: [content.msg, login success!]
+        - len_eq: [content.token, 40]

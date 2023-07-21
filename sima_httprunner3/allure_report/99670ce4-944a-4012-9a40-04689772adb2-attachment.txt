@@ -1,0 +1,56 @@
+2023-07-20 00:01:59.743 | INFO     | httprunner.runner:test_start:453 - Start to run testcase: 登录-成功, TestCase ID: 2c807735-642f-4721-88d6-8b45f6e3e364
+2023-07-20 00:01:59.743 | INFO     | httprunner.runner:__run_step:295 - run step begin: 登录成功 >>>>>>
+2023-07-20 00:01:59.996 | DEBUG    | httprunner.client:request:186 - client IP: 192.168.3.17, Port: 58349
+2023-07-20 00:01:59.996 | DEBUG    | httprunner.client:request:194 - server IP: 124.70.221.221, Port: 8201
+2023-07-20 00:01:59.997 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://124.70.221.221:8201/api/v1/login
+headers  : {
+    "User-Agent": "python-requests/2.28.2",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "HRUN-Request-ID": "HRUN-2c807735-642f-4721-88d6-8b45f6e3e364-519743",
+    "Content-Length": "42",
+    "Content-Type": "application/json"
+}
+cookies  : {}
+body     : {
+    "username": "test",
+    "password": "123456"
+}
+
+2023-07-20 00:01:59.998 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Wed, 19 Jul 2023 16:02:07 GMT",
+    "Server": "WSGIServer/0.2 CPython/3.6.8",
+    "Content-Type": "application/json",
+    "Allow": "POST, OPTIONS",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Content-Length": "109",
+    "Vary": "Cookie",
+    "Set-Cookie": "sessionid=mejbq1hq4e2xf9gl9gg7mat9d9fanu7p; expires=Wed, 02-Aug-2023 16:02:07 GMT; HttpOnly; Max-Age=1209600; Path=/"
+}
+cookies  : {
+    "sessionid": "mejbq1hq4e2xf9gl9gg7mat9d9fanu7p"
+}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "code": 0,
+    "msg": "login success!",
+    "username": "test",
+    "token": "784eb3558e6934430e9bfcccfb153a4f0596e449"
+}
+
+2023-07-20 00:01:59.998 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 253.32 ms, response_length: 0 bytes
+2023-07-20 00:01:59.998 | INFO     | httprunner.response:extract:176 - extract mapping: {'token': '784eb3558e6934430e9bfcccfb153a4f0596e449'}
+2023-07-20 00:01:59.998 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2023-07-20 00:01:59.998 | INFO     | httprunner.response:validate:246 - assert body.code equal 0(int)	==> pass
+2023-07-20 00:01:59.999 | INFO     | httprunner.response:validate:246 - assert body.msg equal login success!(str)	==> pass
+2023-07-20 00:01:59.999 | INFO     | httprunner.runner:__run_step:307 - run step end: 登录成功 <<<<<<
+
+2023-07-20 00:01:59.999 | INFO     | httprunner.runner:test_start:463 - generate testcase log: D:\test\hrun\sima_httprunner3\logs\2c807735-642f-4721-88d6-8b45f6e3e364.run.log

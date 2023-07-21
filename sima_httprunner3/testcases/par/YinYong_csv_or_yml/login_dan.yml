@@ -1,0 +1,22 @@
+config:
+    name: login case
+    base_url: ${ENV(base_url)}
+    variables:
+        password: 123456
+    parameters:
+        user: ${P(data/user_password.csv)}
+
+teststeps:
+-
+    name: step login
+    request:
+        url: /api/v1/login
+        method: POST
+        json:
+            username: $user
+            password: $password
+    validate:
+        - eq: [status_code, 200]
+        - eq: [content.code, 0]
+        - eq: [content.msg, login success!]
+        - len_eq: [content.token, 40]

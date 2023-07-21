@@ -1,0 +1,16 @@
+config:
+    name: 请求头为：application/x-www-form-urlencoded
+    base_url: http://124.70.221.221:8201
+
+teststeps:
+-
+    name: 发送请求
+    request:
+        url: /api/v4/login
+        method: POST
+        data:
+            username: test1
+            password: "123456"
+    validate:
+        - eq: [status_code,200]
+        - eq: [content.code,0]

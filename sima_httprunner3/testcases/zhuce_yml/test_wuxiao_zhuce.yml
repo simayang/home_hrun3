@@ -1,0 +1,26 @@
+config:
+    name: 注册-无效等价
+    base_url: ${ENV(base_url)}
+    parameters:
+        user-psw-emali:
+        - ["","123456","123@qq.com"]
+        - [a,123213xx,"123456@qq.com"]
+        - [aaaaaaaaaaabbbbbbbbbcccccccccc123,"","123@qq.com"]
+        - [testx123,"","123@qq.com"]
+        - [testx123,"12345","123@qq.com"]
+        - [testx123,"123456789123456789","123@qq.com"]
+        - [testx123,"1234546","12345"]
+
+teststeps:
+-
+    name: 注册失败-步骤
+    request:
+        url: /api/v1/register
+        method: POST
+        json:
+            username: $user
+            password: $psw
+            email: $emali
+    validate:
+        - eq: [status_code, 200]
+        - eq: [body.code, 3003]

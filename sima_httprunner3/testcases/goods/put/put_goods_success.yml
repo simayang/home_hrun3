@@ -1,0 +1,42 @@
+config:
+    name: 修改商品-成功
+    base_url: ${ENV(base_url)}
+    variables:
+        id: 77783
+        goodsname: sima_add
+        goodscode: sp_1687965910
+        merchantid: 10003
+        merchantname: 《东方甄选》
+        goodsprice: 30
+        stock: 100
+        goodsgroupid: 3
+        price: 30
+        goodsstatus: 1
+
+teststeps:
+-
+    name: 取到登录的token
+    testcase: testcases/login_yml/login.yml
+
+-
+    name: 修改商品
+    request:
+        url: /api/v1/goods/$id
+        method: PUT
+        json:
+            id: $id
+            goodsname: $goodsname
+            goodscode: $goodscode
+            merchantid: $merchantid
+            merchantname: $merchantname
+            goodsprice: $goodsprice
+            stock: $stock
+            goodsgroupid: $goodsgroupid
+            price: $price
+            goodsstatus: $goodsstatus
+    vilidate:
+        - eq: [status_code,200]
+        - eq: [body.code,0]
+        - eq: [body.msg, success!]
+
+

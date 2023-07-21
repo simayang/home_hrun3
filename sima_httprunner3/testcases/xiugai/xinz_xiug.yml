@@ -1,0 +1,42 @@
+config:
+    name: 先新增商品，再修改商品
+    base_url: ${ENV(base_url)}
+    export:
+    - goods_id
+    - goodscode
+    output:
+    - goods_id
+    - goodscode
+
+
+teststeps:
+-
+    name: 先新增
+    variables:
+        goodsname: simayy_0503
+        goodscode: ${goods_code()}
+    request:
+        url: /api/v1/goods
+        method: POST
+        json:
+            goodsname: $goodsname
+            goodscode: $goodscode
+    extract:
+        goods_id: body.data.id
+        goodscode: body.data.goodscode
+    validate:
+        - eq: [status_code,200]
+        - eq: [content.code,0]
+
+-
+    name: 再修改商品
+    request:
+        url: /api/v1/goods/$goods_id
+        method: PUT
+        json:
+            goodsprice: 12.23
+            goodscode: $goodscode
+    validate:
+        - eq: [status_code,200]
+        - eq: [body.code,0]
+        - eq: [content.data.goodsprice,"${get_goods_spid($goods_id,goodsprice)}"]

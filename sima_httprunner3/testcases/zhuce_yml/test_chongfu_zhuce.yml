@@ -1,0 +1,23 @@
+config:
+    name: 重复注册
+    base_url: ${ENV(base_url)}
+
+teststeps:
+-
+    name: 重复注册
+    variables:
+        user: test
+        psw: "123456"
+        msg: test用户已被注册
+    request:
+        url: /api/v1/register
+        method: POST
+        headers:
+            Accept-Encoding: gzip,deflate,br,utf-8
+        json:
+            username: $user
+            password: $psw
+
+    validate:
+        - eq: [content.code, 2000]
+        - eq: [body.msg, $msg]

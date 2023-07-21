@@ -1,0 +1,48 @@
+config:
+    name: 用例描述--登录
+    variables:
+        user: test
+        psw: "123456"
+    base_url: http://124.70.221.221:8201
+
+teststeps:
+-
+    name: step - 登录
+    request:
+        url: /api/v1/login
+        method: POST
+        json:
+            username: $user
+            password: $psw
+    validate:
+        - eq: [status_code, 200]
+        - eq: [content.code, 0]
+-
+    name: step - 登录2
+    variables:
+        user: test1
+        psw: "123456"
+    request:
+        url: /api/v1/login
+        method: POST
+        json:
+            username: $user
+            password: $psw
+    validate:
+        - eq: [status_code, 200]
+        - eq: [content.code, 0]
+
+-
+    name: step - 登录3
+    variables:
+        user: ${ENV(user)}
+        psw: "123456"
+    request:
+        url: /api/v1/login
+        method: POST
+        json:
+            username: $user
+            password: $psw
+    validate:
+        - eq: [status_code, 200]
+        - eq: [content.code, 0]

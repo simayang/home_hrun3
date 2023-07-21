@@ -1,0 +1,24 @@
+config:
+    name: testcase description
+    variables: {}
+    verify: false
+teststeps:
+-   name: /api/v1/login
+    request:
+        headers:
+            Content-Length: '52'
+            Content-Type: application/json
+            Host: 124.70.221.221:8201
+            User-Agent: Fiddler
+        json:
+            password: '123456'
+            username: test
+        method: POST
+        url: http://124.70.221.221:8201/api/v1/login
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json

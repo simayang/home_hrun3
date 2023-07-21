@@ -1,0 +1,23 @@
+config:
+    name: sign签名
+    base_url: ${ENV(base_url)}
+    variables:
+        user: test1
+        psw: "123456"
+
+teststeps:
+-
+    name: 登录-签名
+    setup_hooks:
+        - ${setup_request($request)}
+    request:
+        url: /api/v3/login
+        method: POST
+        json:
+            username: $user
+            password: $psw
+    validate:
+        - eq: [status_code, 200]
+        - eq: [content.code, 0]
+        - eq: [content.msg, login success!]
+        - len_eq: [content.token, 40]

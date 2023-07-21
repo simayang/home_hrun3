@@ -1,0 +1,37 @@
+config:
+    name: goods 添加成功
+    base_url: ${ENV(base_url)}
+    parameters:
+        goodsname-goodscode-merchantid-merchantname-goodsprice-stock-goodsgroupid-price-goodsstatus:
+            - ["sima_add","${goods_code()}","10003","《东方甄选》","50","100","1","30","1"]
+    export:
+    - dele_spid2
+
+teststeps:
+
+-
+    name: 先登录
+    testcase: testcases/login_yml/login.yml
+-
+    name: 添加商品-成功
+    request:
+        url: /api/v1/goods
+        method: POST
+        headers:
+            Authorization: Token $token
+        json:
+            goodsname: $goodsname
+            goodscode: $goodscode
+            merchantid: $merchantid
+            merchantname: $merchantname
+            goodsprice: $goodsprice
+            stock: $stock
+            goodsgroupid: $goodsgroupid
+            price: $price
+            goodsstatus: $goodsstatus
+    extract:
+        - dele_spid2: body.data.id
+    validate:
+        - eq: [status_code,200]
+        - eq: [body.code,0]
+        - eq: [body.msg, success!]

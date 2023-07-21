@@ -1,0 +1,19 @@
+config:
+    name: 上传成功
+    base_url: ${ENV(base_url)}
+    parameters:
+        filename-titlename-code-msg:
+        - [data/test.png,司马,0,success!]
+
+teststeps:
+-
+    name: 上传成功
+    request:
+        url: /api/v1/upfile/
+        method: POST
+        upload:
+            file: $filename
+            title: $titlename
+    validate:
+        - eq: [body.code,$code]
+        - eq: [body.msg,$msg]

@@ -1,0 +1,23 @@
+config:
+    name: 用例描述--登录
+    variables:
+        user: test
+        psw: "123456"
+    base_url: http://124.70.221.221:8201
+    export:
+    - token
+
+teststeps:
+-
+    name: step - 登录
+    request:
+        url: /api/v1/login
+        method: POST
+        json:
+            username: $user
+            password: $psw
+    extract:
+        token: body.token
+    validate:
+        - eq: [status_code, 200]
+        - eq: [content.code, 0]

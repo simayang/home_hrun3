@@ -1,0 +1,18 @@
+config:
+    name: 注册
+    base_url: ${ENV(base_url)}
+
+teststeps:
+-
+    name: 注册-引用debugtalk注册不同账户
+    variables:
+        psw: "123456"
+    request:
+        url: /api/v1/register
+        method: POST
+        json:
+            username: ${user_register()}
+            password: $psw
+    validate:
+        - eq: [status_code, 200]
+        - eq: [content.code, 0]

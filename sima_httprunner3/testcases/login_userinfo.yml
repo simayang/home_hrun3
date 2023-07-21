@@ -1,0 +1,46 @@
+config:
+    name: 登录，取token，设置变量给下一个接口用
+    variables:
+        user: test
+        pws: "123456"
+#        user: ${ENV(user)}
+#    parameters:
+#        user: ${P(data/yin_py.yml)}
+    export:
+    - token
+    output:
+    - token
+teststeps:
+-
+    name: 先登录
+    variables:
+        token: token
+    request:
+        url: ${ENV(base_url)}/api/v1/login
+        method: POST
+        json:
+            username: $user
+            password: $pws
+    extract:
+        token: body.token
+    validate:
+        - eq: [status_code,200]
+        - eq: [content.code,0]
+        - len_eq: [body.token,40]
+
+-
+    name: 再修改个人信息
+    request:
+        url: ${ENV(base_url)}/api/v1/userinfo
+        method: POST
+        headers:
+            Authorization: Token $token
+        json:
+            name: test
+            sex: M
+            age: 20
+            mail: 283340479@qq.com
+    validate:
+        - eq: [status_code,200]
+        - eq: [body.code,0]
+        - eq: [body.message, update some data!]

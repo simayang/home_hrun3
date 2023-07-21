@@ -1,0 +1,20 @@
+config:
+    name: 登录 - 失败场景
+    base_url: http://124.70.221.221:8201
+    parameters:
+        user-psw:
+        - [xxxxyzz, "123456"]
+        - [test123, "1234567"]
+        - ['','']
+
+teststeps:
+-
+    name: 登录-失败
+    request:
+        url: /api/v1/login
+        method: POST
+        json:
+            username: $user
+            password: $psw
+    validate:
+        - eq: [body.code,3003]

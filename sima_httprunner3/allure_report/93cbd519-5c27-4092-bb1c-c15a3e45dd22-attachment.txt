@@ -1,0 +1,53 @@
+2023-07-20 00:01:58.973 | INFO     | httprunner.runner:test_start:453 - Start to run testcase: 登录 - 失败场景, TestCase ID: 771bc3ae-dcdc-4a9b-a6fa-1ea4c8ef6e51
+2023-07-20 00:01:58.973 | INFO     | httprunner.runner:__run_step:295 - run step begin: 登录-失败 >>>>>>
+2023-07-20 00:01:59.244 | DEBUG    | httprunner.client:request:186 - client IP: 192.168.3.17, Port: 58346
+2023-07-20 00:01:59.245 | DEBUG    | httprunner.client:request:194 - server IP: 124.70.221.221, Port: 8201
+2023-07-20 00:01:59.245 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://124.70.221.221:8201/api/v1/login
+headers  : {
+    "User-Agent": "python-requests/2.28.2",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "HRUN-Request-ID": "HRUN-771bc3ae-dcdc-4a9b-a6fa-1ea4c8ef6e51-518974",
+    "Content-Length": "45",
+    "Content-Type": "application/json"
+}
+cookies  : {}
+body     : {
+    "username": "xxxxyzz",
+    "password": "123456"
+}
+
+2023-07-20 00:01:59.246 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Wed, 19 Jul 2023 16:02:06 GMT",
+    "Server": "WSGIServer/0.2 CPython/3.6.8",
+    "Content-Type": "application/json",
+    "Allow": "POST, OPTIONS",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Content-Length": "78",
+    "Vary": "Cookie",
+    "Set-Cookie": "sessionid=gih9o28jnfwjqtjzgi7084caprl319zu; expires=Wed, 02-Aug-2023 16:02:06 GMT; HttpOnly; Max-Age=1209600; Path=/"
+}
+cookies  : {
+    "sessionid": "gih9o28jnfwjqtjzgi7084caprl319zu"
+}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "code": 3003,
+    "msg": "\u8d26\u53f7\u6216\u5bc6\u7801\u4e0d\u6b63\u786e",
+    "username": "xxxxyzz",
+    "token": ""
+}
+
+2023-07-20 00:01:59.246 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 270.32 ms, response_length: 0 bytes
+2023-07-20 00:01:59.247 | INFO     | httprunner.response:validate:246 - assert body.code equal 3003(int)	==> pass
+2023-07-20 00:01:59.247 | INFO     | httprunner.runner:__run_step:307 - run step end: 登录-失败 <<<<<<
+
+2023-07-20 00:01:59.247 | INFO     | httprunner.runner:test_start:463 - generate testcase log: D:\test\hrun\sima_httprunner3\logs\771bc3ae-dcdc-4a9b-a6fa-1ea4c8ef6e51.run.log

@@ -1,0 +1,11 @@
+config:
+    name: 发送https请求
+
+teststeps:
+-
+    name: 请求https有证书的网站
+    request:
+        method: GET
+        url: https://www.cnblogs.com/yoyoketang/
+    validate:
+        - eq: [status_code,200]

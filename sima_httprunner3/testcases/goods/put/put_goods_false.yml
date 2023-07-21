@@ -1,0 +1,34 @@
+config:
+    name: 修改-失败
+    base_url: ${ENV(base_url)}
+    parameters:
+        id-goodsname-goodscode-merchantid-merchantname-goodsprice-stock-goodsgroupid-price-goodsstatus-code:
+            - ["77783","sima_add","sp_1687965910","10003","《东方甄选_大SB》","30","999999999999999999999999999999999999999999999999","3","30","1",3003]
+            - ["77783","sima_add","sp_1687965910","10003","《东方甄选_大SB》","30","sss","3","30","1",3003]
+            - ["77783","sima_add","sp_1687965910","10003","《东方甄选_大SB》","30","0.1","3","30","1",3003]
+            - ["77783","sima_add","sp_1009997","10003","《东方甄选_大SB》","30","11","3","30","1",3003]
+            - ["77783","sima_add","sp_100002sp_100002sp_100002sp_100002sp_100002sp_100002","10003","《东方甄选_大SB》","30","11","3","30","1",3003]
+            - ["77783","sima_add","sp_1687965910","10003","@%&（）（）—</script>—","30","11","3","30","1",0]
+            - ["77783","sima_add","sp_1687965910","sdsdf@$%^^%","《东方甄选_大SB》","30","11","3","30","1",0]
+            - ["77783","sima_add","sp_1687965910","12322125","《东方甄选_大SB》","30","11","3","30","1",0]
+            - ["77783","sima_add","sp_1687965910","","《东方甄选_大SB》","30","11","3","30","1",0]
+
+teststeps:
+-
+    name: 修改商品-失败场景
+    request:
+        url: /api/v1/goods/$id
+        method: PUT
+        json:
+            id: $id
+            goodsname: $goodsname
+            goodscode: $goodscode
+            merchantid: $merchantid
+            merchantname: $merchantname
+            goodsprice: $goodsprice
+            stock: $stock
+            goodsgroupid: $goodsgroupid
+            price: $price
+            goodsstatus: $goodsstatus
+    validate:
+        - eq: [body.code,$code]

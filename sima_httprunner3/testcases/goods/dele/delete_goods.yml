@@ -1,0 +1,46 @@
+config:
+    name: 登录、添加商品、删除商品
+    base_url: ${ENV(base_url)}
+    parameters:
+        goodsname-goodscode-merchantid-merchantname-goodsprice-stock-goodsgroupid-price-goodsstatus:
+            - ["sima_add1","${goods_code()}","10003","《东方甄选》2","50","100","1","30","1"]
+    export:
+    - dele_spid
+teststeps:
+-
+    name: 登录
+    testcase: testcases/login_yml/login.yml
+
+-
+    name: 添加商品
+    request:
+        url: /api/v1/goods
+        method: POST
+        headers:
+        headers:
+            Authorization: Token $token
+        json:
+            goodsname: $goodsname
+            goodscode: $goodscode
+            merchantid: $merchantid
+            merchantname: $merchantname
+            goodsprice: $goodsprice
+            stock: $stock
+            goodsgroupid: $goodsgroupid
+            price: $price
+            goodsstatus: $goodsstatus
+    extract:
+        - dele_spid: body.data.id
+    validate:
+        - eq: [status_code,200]
+        - eq: [body.code,0]
+        - eq: [body.msg, success!]
+
+-
+    name: 删除商品
+    request:
+        url: /api/v1/goods/$dele_spid
+        method: DELETE
+    validate:
+        - eq: [body.code,0]
+        - eq: [body.msg,success!]
