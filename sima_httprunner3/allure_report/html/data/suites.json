@@ -1,0 +1,77 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "testcases.login_yml",
+    "children" : [ {
+      "name" : "login_false_test",
+      "children" : [ {
+        "name" : "TestCaseLoginFalse",
+        "children" : [ {
+          "name" : "登录 - 失败场景",
+          "uid" : "bb5ad0f63b69414c",
+          "parentUid" : "1113214b1da5b46d859a97e284449830",
+          "status" : "passed",
+          "time" : {
+            "start" : 1689783492258,
+            "stop" : 1689783492491,
+            "duration" : 233
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'user': 'xxxxyzz', 'psw': '123456'}" ]
+        }, {
+          "name" : "登录 - 失败场景",
+          "uid" : "6cc7b0ee92343bd",
+          "parentUid" : "1113214b1da5b46d859a97e284449830",
+          "status" : "passed",
+          "time" : {
+            "start" : 1689783492494,
+            "stop" : 1689783492756,
+            "duration" : 262
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'user': 'test123', 'psw': '1234567'}" ]
+        }, {
+          "name" : "登录 - 失败场景",
+          "uid" : "a37838a24340e99e",
+          "parentUid" : "1113214b1da5b46d859a97e284449830",
+          "status" : "passed",
+          "time" : {
+            "start" : 1689783492759,
+            "stop" : 1689783492985,
+            "duration" : 226
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'user': '', 'psw': ''}" ]
+        } ],
+        "uid" : "1113214b1da5b46d859a97e284449830"
+      } ],
+      "uid" : "a2b9ccb46f9a6db9f996f06c1308d9c7"
+    }, {
+      "name" : "login_test",
+      "children" : [ {
+        "name" : "TestCaseLogin",
+        "children" : [ {
+          "name" : "登录-成功",
+          "uid" : "180f5a64c7eba766",
+          "parentUid" : "e403dfd603f4f78c2ea54f00e6b404d9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1689783492989,
+            "stop" : 1689783493252,
+            "duration" : 263
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e403dfd603f4f78c2ea54f00e6b404d9"
+      } ],
+      "uid" : "aeb19c74d74f7b78d7b75b526bb2f120"
+    } ],
+    "uid" : "caab46349e585f5c8dd6bf3cc9da5fb4"
+  } ]
+}

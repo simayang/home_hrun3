@@ -1,0 +1,69 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "testcases.login_yml",
+    "children" : [ {
+      "name" : "login_false_test",
+      "children" : [ {
+        "name" : "登录 - 失败场景",
+        "uid" : "bb5ad0f63b69414c",
+        "parentUid" : "409f31d77626e8abe122b32efd3a070a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689783492258,
+          "stop" : 1689783492491,
+          "duration" : 233
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'user': 'xxxxyzz', 'psw': '123456'}" ]
+      }, {
+        "name" : "登录 - 失败场景",
+        "uid" : "6cc7b0ee92343bd",
+        "parentUid" : "409f31d77626e8abe122b32efd3a070a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689783492494,
+          "stop" : 1689783492756,
+          "duration" : 262
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'user': 'test123', 'psw': '1234567'}" ]
+      }, {
+        "name" : "登录 - 失败场景",
+        "uid" : "a37838a24340e99e",
+        "parentUid" : "409f31d77626e8abe122b32efd3a070a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689783492759,
+          "stop" : 1689783492985,
+          "duration" : 226
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'user': '', 'psw': ''}" ]
+      } ],
+      "uid" : "409f31d77626e8abe122b32efd3a070a"
+    }, {
+      "name" : "login_test",
+      "children" : [ {
+        "name" : "登录-成功",
+        "uid" : "180f5a64c7eba766",
+        "parentUid" : "2e25ab0738d02e626d5c52216c570664",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689783492989,
+          "stop" : 1689783493252,
+          "duration" : 263
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2e25ab0738d02e626d5c52216c570664"
+    } ],
+    "uid" : "testcases.login_yml"
+  } ]
+}

@@ -1,0 +1,91 @@
+{
+  "uid" : "8ffe2ee4d80ce0a3",
+  "name" : "登录 - 失败场景",
+  "fullName" : "testcases.login_yml.login_false_test#test_start",
+  "historyId" : "c0caed1224d7280d11b30f83d71d0217",
+  "time" : {
+    "start" : 1689782519496,
+    "stop" : 1689782519737,
+    "duration" : 241
+  },
+  "description" : "TestCase ID: e68f9490-a0cc-4fff-8ee3-44dc2171d825",
+  "descriptionHtml" : "<p>TestCase ID: e68f9490-a0cc-4fff-8ee3-44dc2171d825</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "TestCase ID: e68f9490-a0cc-4fff-8ee3-44dc2171d825",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "step: 登录-失败",
+      "time" : {
+        "start" : 1689782519498,
+        "stop" : 1689782519737,
+        "duration" : 239
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "a7060b76cdb00f60",
+      "name" : "stderr",
+      "source" : "a7060b76cdb00f60.txt",
+      "type" : "text/plain",
+      "size" : 2381
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcases.login_yml"
+  }, {
+    "name" : "suite",
+    "value" : "login_false_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCaseLoginFalse"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-MHV1HFB7"
+  }, {
+    "name" : "thread",
+    "value" : "24980-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.login_yml.login_false_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "param",
+    "value" : "{'user': '', 'psw': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8ffe2ee4d80ce0a3.json",
+  "parameterValues" : [ "{'user': '', 'psw': ''}" ]
+}

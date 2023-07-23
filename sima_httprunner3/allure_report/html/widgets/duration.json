@@ -1,0 +1,41 @@
+[ {
+  "uid" : "bb5ad0f63b69414c",
+  "name" : "登录 - 失败场景",
+  "time" : {
+    "start" : 1689783492258,
+    "stop" : 1689783492491,
+    "duration" : 233
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a37838a24340e99e",
+  "name" : "登录 - 失败场景",
+  "time" : {
+    "start" : 1689783492759,
+    "stop" : 1689783492985,
+    "duration" : 226
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6cc7b0ee92343bd",
+  "name" : "登录 - 失败场景",
+  "time" : {
+    "start" : 1689783492494,
+    "stop" : 1689783492756,
+    "duration" : 262
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "180f5a64c7eba766",
+  "name" : "登录-成功",
+  "time" : {
+    "start" : 1689783492989,
+    "stop" : 1689783493252,
+    "duration" : 263
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

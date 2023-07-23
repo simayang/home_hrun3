@@ -1,0 +1,109 @@
+{
+  "uid" : "6cc7b0ee92343bd",
+  "name" : "登录 - 失败场景",
+  "fullName" : "testcases.login_yml.login_false_test#test_start",
+  "historyId" : "9c0c226602a202b51f72ec4e4694c190",
+  "time" : {
+    "start" : 1689783492494,
+    "stop" : 1689783492756,
+    "duration" : 262
+  },
+  "description" : "TestCase ID: 972492e4-3d22-4793-a669-4a4f31743882",
+  "descriptionHtml" : "<p>TestCase ID: 972492e4-3d22-4793-a669-4a4f31743882</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "TestCase ID: 972492e4-3d22-4793-a669-4a4f31743882",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "step: 登录-失败",
+      "time" : {
+        "start" : 1689783492496,
+        "stop" : 1689783492755,
+        "duration" : 259
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "bfd9d914db73d270",
+      "name" : "stderr",
+      "source" : "bfd9d914db73d270.txt",
+      "type" : "text/plain",
+      "size" : 2402
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcases.login_yml"
+  }, {
+    "name" : "suite",
+    "value" : "login_false_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCaseLoginFalse"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-MHV1HFB7"
+  }, {
+    "name" : "thread",
+    "value" : "34596-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.login_yml.login_false_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "param",
+    "value" : "{'user': 'test123', 'psw': '1234567'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "9409e24540ff77d6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1689782519251,
+        "stop" : 1689782519493,
+        "duration" : 242
+      }
+    }, {
+      "uid" : "83f4c6c6348e5692",
+      "status" : "passed",
+      "time" : {
+        "start" : 1689782383329,
+        "stop" : 1689782383562,
+        "duration" : 233
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6cc7b0ee92343bd.json",
+  "parameterValues" : [ "{'user': 'test123', 'psw': '1234567'}" ]
+}

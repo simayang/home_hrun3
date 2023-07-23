@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Jul 20 00:18:12 CST 2023","Thu Jul 20 00:18:12 CST 2023","233","testcases.login_yml","login_false_test","TestCaseLoginFalse","","","登录 - 失败场景","TestCase ID: 8503b529-9830-4d1f-8621-b121346bc020"
+"passed","Thu Jul 20 00:18:12 CST 2023","Thu Jul 20 00:18:12 CST 2023","226","testcases.login_yml","login_false_test","TestCaseLoginFalse","","","登录 - 失败场景","TestCase ID: 6585c76b-b4ed-4752-8898-e7cfd7e57c56"
+"passed","Thu Jul 20 00:18:12 CST 2023","Thu Jul 20 00:18:12 CST 2023","262","testcases.login_yml","login_false_test","TestCaseLoginFalse","","","登录 - 失败场景","TestCase ID: 972492e4-3d22-4793-a669-4a4f31743882"
+"passed","Thu Jul 20 00:18:12 CST 2023","Thu Jul 20 00:18:13 CST 2023","263","testcases.login_yml","login_test","TestCaseLogin","","","登录-成功","TestCase ID: 8b712125-b69e-454c-ab60-2e0217200a03"

@@ -1,0 +1,177 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "LAPTOP-MHV1HFB7",
+    "children" : [ {
+      "name" : "24864-MainThread",
+      "children" : [ {
+        "name" : "登录 - 失败场景",
+        "uid" : "32d443cbfb683664",
+        "parentUid" : "68e2489eb4098c76ee2711aa2fec0f75",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689782383093,
+          "stop" : 1689782383325,
+          "duration" : 232
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'user': 'xxxxyzz', 'psw': '123456'}" ]
+      }, {
+        "name" : "登录-成功",
+        "uid" : "fc5db75c83c5fae6",
+        "parentUid" : "68e2489eb4098c76ee2711aa2fec0f75",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689782382831,
+          "stop" : 1689782383089,
+          "duration" : 258
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "登录 - 失败场景",
+        "uid" : "83f4c6c6348e5692",
+        "parentUid" : "68e2489eb4098c76ee2711aa2fec0f75",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689782383329,
+          "stop" : 1689782383562,
+          "duration" : 233
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'user': 'test123', 'psw': '1234567'}" ]
+      }, {
+        "name" : "登录 - 失败场景",
+        "uid" : "e38791218e1c1ab4",
+        "parentUid" : "68e2489eb4098c76ee2711aa2fec0f75",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689782383565,
+          "stop" : 1689782383793,
+          "duration" : 228
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'user': '', 'psw': ''}" ]
+      } ],
+      "uid" : "68e2489eb4098c76ee2711aa2fec0f75"
+    }, {
+      "name" : "34596-MainThread",
+      "children" : [ {
+        "name" : "登录 - 失败场景",
+        "uid" : "a37838a24340e99e",
+        "parentUid" : "519651ee8e6718265455790578779717",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689783492759,
+          "stop" : 1689783492985,
+          "duration" : 226
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'user': '', 'psw': ''}" ]
+      }, {
+        "name" : "登录 - 失败场景",
+        "uid" : "bb5ad0f63b69414c",
+        "parentUid" : "519651ee8e6718265455790578779717",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689783492258,
+          "stop" : 1689783492491,
+          "duration" : 233
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'user': 'xxxxyzz', 'psw': '123456'}" ]
+      }, {
+        "name" : "登录 - 失败场景",
+        "uid" : "6cc7b0ee92343bd",
+        "parentUid" : "519651ee8e6718265455790578779717",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689783492494,
+          "stop" : 1689783492756,
+          "duration" : 262
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'user': 'test123', 'psw': '1234567'}" ]
+      }, {
+        "name" : "登录-成功",
+        "uid" : "180f5a64c7eba766",
+        "parentUid" : "519651ee8e6718265455790578779717",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689783492989,
+          "stop" : 1689783493252,
+          "duration" : 263
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "519651ee8e6718265455790578779717"
+    }, {
+      "name" : "24980-MainThread",
+      "children" : [ {
+        "name" : "登录 - 失败场景",
+        "uid" : "9409e24540ff77d6",
+        "parentUid" : "dea7721e786a5bcf5579d4ac4d8d9dc9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689782519251,
+          "stop" : 1689782519493,
+          "duration" : 242
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'user': 'test123', 'psw': '1234567'}" ]
+      }, {
+        "name" : "登录-成功",
+        "uid" : "fb860f064722f9e4",
+        "parentUid" : "dea7721e786a5bcf5579d4ac4d8d9dc9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689782519741,
+          "stop" : 1689782519999,
+          "duration" : 258
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "登录 - 失败场景",
+        "uid" : "8ffe2ee4d80ce0a3",
+        "parentUid" : "dea7721e786a5bcf5579d4ac4d8d9dc9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689782519496,
+          "stop" : 1689782519737,
+          "duration" : 241
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'user': '', 'psw': ''}" ]
+      }, {
+        "name" : "登录 - 失败场景",
+        "uid" : "e569b15b0158f50a",
+        "parentUid" : "dea7721e786a5bcf5579d4ac4d8d9dc9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689782518970,
+          "stop" : 1689782519247,
+          "duration" : 277
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'user': 'xxxxyzz', 'psw': '123456'}" ]
+      } ],
+      "uid" : "dea7721e786a5bcf5579d4ac4d8d9dc9"
+    } ],
+    "uid" : "6e97e241dae437bfb1992187f2e7a3f4"
+  } ]
+}

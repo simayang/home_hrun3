@@ -1,0 +1,221 @@
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=1, microseconds=456107), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='D:\\test\\python3.8.9\\lib\\site-packages\\httprunner\\runner.py'), 'function': 'test_start', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 453, 'message': 'Start to run testcase: 登录-成功, TestCase ID: e728c870-4d8f-4afc-ad5f-42e6c3815d67', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=24864, name='MainProcess'), 'thread': (id=17548, name='MainThread'), 'time': datetime(2023, 7, 19, 23, 59, 42, 833043, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), '中国标准时间'))}
+Traceback (most recent call last):
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 202, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 211, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] 句柄无效。
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=1, microseconds=457104), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='D:\\test\\python3.8.9\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 295, 'message': 'run step begin: 登录成功 >>>>>>', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=24864, name='MainProcess'), 'thread': (id=17548, name='MainThread'), 'time': datetime(2023, 7, 19, 23, 59, 42, 834040, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), '中国标准时间'))}
+Traceback (most recent call last):
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 202, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 211, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] 句柄无效。
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=1, microseconds=704443), 'exception': None, 'extra': {}, 'file': (name='client.py', path='D:\\test\\python3.8.9\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 186, 'message': 'client IP: 192.168.3.17, Port: 58171', 'module': 'client', 'name': 'httprunner.client', 'process': (id=24864, name='MainProcess'), 'thread': (id=17548, name='MainThread'), 'time': datetime(2023, 7, 19, 23, 59, 43, 81379, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), '中国标准时间'))}
+Traceback (most recent call last):
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 202, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 211, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] 句柄无效。
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=1, microseconds=705489), 'exception': None, 'extra': {}, 'file': (name='client.py', path='D:\\test\\python3.8.9\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 194, 'message': 'server IP: 124.70.221.221, Port: 8201', 'module': 'client', 'name': 'httprunner.client', 'process': (id=24864, name='MainProcess'), 'thread': (id=17548, name='MainThread'), 'time': datetime(2023, 7, 19, 23, 59, 43, 82425, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), '中国标准时间'))}
+Traceback (most recent call last):
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 202, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 211, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] 句柄无效。
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=1, microseconds=705489), 'exception': None, 'extra': {}, 'file': (name='client.py', path='D:\\test\\python3.8.9\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== request details ==================\nmethod   : POST\nurl      : http://124.70.221.221:8201/api/v1/login\nheaders  : {\n    "User-Agent": "python-requests/2.28.2",\n    "Accept-Encoding": "gzip, deflate, br",\n    "Accept": "*/*",\n    "Connection": "keep-alive",\n    "HRUN-Request-ID": "HRUN-e728c870-4d8f-4afc-ad5f-42e6c3815d67-382835",\n    "Content-Length": "42",\n    "Content-Type": "application/json"\n}\ncookies  : {}\nbody     : {\n    "username": "test",\n    "password": "123456"\n}\n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=24864, name='MainProcess'), 'thread': (id=17548, name='MainThread'), 'time': datetime(2023, 7, 19, 23, 59, 43, 82425, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), '中国标准时间'))}
+Traceback (most recent call last):
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 202, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 211, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] 句柄无效。
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=1, microseconds=707477), 'exception': None, 'extra': {}, 'file': (name='client.py', path='D:\\test\\python3.8.9\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== response details ==================\nstatus_code : 200\nheaders  : {\n    "Date": "Wed, 19 Jul 2023 15:59:50 GMT",\n    "Server": "WSGIServer/0.2 CPython/3.6.8",\n    "Content-Type": "application/json",\n    "Allow": "POST, OPTIONS",\n    "X-Frame-Options": "SAMEORIGIN",\n    "Content-Length": "109",\n    "Vary": "Cookie",\n    "Set-Cookie": "sessionid=be05lav8h7ducarvjqyauwlf4swsaze8; expires=Wed, 02-Aug-2023 15:59:50 GMT; HttpOnly; Max-Age=1209600; Path=/"\n}\ncookies  : {\n    "sessionid": "be05lav8h7ducarvjqyauwlf4swsaze8"\n}\nencoding : utf-8\ncontent_type : application/json\nbody     : {\n    "code": 0,\n    "msg": "login success!",\n    "username": "test",\n    "token": "2e3dc45a21516d203a41fae868d52409411af8a5"\n}\n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=24864, name='MainProcess'), 'thread': (id=17548, name='MainThread'), 'time': datetime(2023, 7, 19, 23, 59, 43, 84413, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), '中国标准时间'))}
+Traceback (most recent call last):
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 202, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 211, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] 句柄无效。
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=1, microseconds=707477), 'exception': None, 'extra': {}, 'file': (name='client.py', path='D:\\test\\python3.8.9\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 217, 'message': 'status_code: 200, response_time(ms): 246.34 ms, response_length: 0 bytes', 'module': 'client', 'name': 'httprunner.client', 'process': (id=24864, name='MainProcess'), 'thread': (id=17548, name='MainThread'), 'time': datetime(2023, 7, 19, 23, 59, 43, 84413, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), '中国标准时间'))}
+Traceback (most recent call last):
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 202, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 211, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] 句柄无效。
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=1, microseconds=708474), 'exception': None, 'extra': {}, 'file': (name='response.py', path='D:\\test\\python3.8.9\\lib\\site-packages\\httprunner\\response.py'), 'function': 'extract', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 176, 'message': "extract mapping: {'token': '2e3dc45a21516d203a41fae868d52409411af8a5'}", 'module': 'response', 'name': 'httprunner.response', 'process': (id=24864, name='MainProcess'), 'thread': (id=17548, name='MainThread'), 'time': datetime(2023, 7, 19, 23, 59, 43, 85410, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), '中国标准时间'))}
+Traceback (most recent call last):
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 202, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 211, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] 句柄无效。
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=1, microseconds=708474), 'exception': None, 'extra': {}, 'file': (name='response.py', path='D:\\test\\python3.8.9\\lib\\site-packages\\httprunner\\response.py'), 'function': 'validate', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 246, 'message': 'assert status_code equal 200(int)\t==> pass', 'module': 'response', 'name': 'httprunner.response', 'process': (id=24864, name='MainProcess'), 'thread': (id=17548, name='MainThread'), 'time': datetime(2023, 7, 19, 23, 59, 43, 85410, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), '中国标准时间'))}
+Traceback (most recent call last):
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 202, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 211, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] 句柄无效。
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=1, microseconds=709472), 'exception': None, 'extra': {}, 'file': (name='response.py', path='D:\\test\\python3.8.9\\lib\\site-packages\\httprunner\\response.py'), 'function': 'validate', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 246, 'message': 'assert body.code equal 0(int)\t==> pass', 'module': 'response', 'name': 'httprunner.response', 'process': (id=24864, name='MainProcess'), 'thread': (id=17548, name='MainThread'), 'time': datetime(2023, 7, 19, 23, 59, 43, 86408, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), '中国标准时间'))}
+Traceback (most recent call last):
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 202, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 211, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] 句柄无效。
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=1, microseconds=710472), 'exception': None, 'extra': {}, 'file': (name='response.py', path='D:\\test\\python3.8.9\\lib\\site-packages\\httprunner\\response.py'), 'function': 'validate', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 246, 'message': 'assert body.msg equal login success!(str)\t==> pass', 'module': 'response', 'name': 'httprunner.response', 'process': (id=24864, name='MainProcess'), 'thread': (id=17548, name='MainThread'), 'time': datetime(2023, 7, 19, 23, 59, 43, 87408, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), '中国标准时间'))}
+Traceback (most recent call last):
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 202, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 211, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] 句柄无效。
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=1, microseconds=710472), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='D:\\test\\python3.8.9\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 307, 'message': 'run step end: 登录成功 <<<<<<\n', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=24864, name='MainProcess'), 'thread': (id=17548, name='MainThread'), 'time': datetime(2023, 7, 19, 23, 59, 43, 87408, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), '中国标准时间'))}
+Traceback (most recent call last):
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 202, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 211, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] 句柄无效。
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=1, microseconds=711471), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='D:\\test\\python3.8.9\\lib\\site-packages\\httprunner\\runner.py'), 'function': 'test_start', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 463, 'message': 'generate testcase log: D:\\test\\hrun\\sima_httprunner3\\logs\\e728c870-4d8f-4afc-ad5f-42e6c3815d67.run.log', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=24864, name='MainProcess'), 'thread': (id=17548, name='MainThread'), 'time': datetime(2023, 7, 19, 23, 59, 43, 88407, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), '中国标准时间'))}
+Traceback (most recent call last):
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "D:\test\python3.8.9\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 47, in write
+    self.__convertor.write(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 177, in write
+    self.write_and_convert(text)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 202, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "D:\test\python3.8.9\lib\site-packages\colorama\ansitowin32.py", line 211, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] 句柄无效。
+--- End of logging error ---
